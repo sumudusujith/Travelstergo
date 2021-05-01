@@ -1,0 +1,124 @@
+.container{
+	width: 800px;
+	padding-left: 20%;
+	padding-right: 20%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+.heading{
+	padding: 0px 50px 50px 50px;
+}
+.editor-image{
+	padding-bottom: 20px;
+	float: left;
+	width: 40%;
+	display: block;
+}
+
+
+h1{
+	font-size: 40px;
+	margin: 0px;
+	padding: 2px;
+}
+h3{
+	font-size: 20px;
+	margin: 0px;
+	padding: 2px;
+}
+
+.editor-name{
+	font-family: 'Roboto Condensed', sans-serif;
+	float: left;
+	width: 60%;
+	display: block;
+	padding-top: 100px;
+	text-align: right;
+}
+
+hr{
+	background-color: black;
+	clear: both;
+	height: 2px;
+}
+
+
+h2{
+	margin-top: 0px;
+}
+
+.blue{
+	color: #0559a3;
+}
+
+.role-info{
+	text-align:center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+}
+.tasks{
+	padding: 0px;
+	margin:0px;
+	list-style-type:none;
+}
+
+ a{
+	color: black;
+	text-decoration: none;
+	
+}
+a:hover{
+	color: #0559a3;
+}
+
+
+
+.left{
+	float: left;
+	width: 44%;
+	border-right: 2px solid black;
+	padding:0px 30px 10px 10px;
+}
+
+.right{
+	float: left;
+	width: 45%;
+	padding:0px 10px 10px 30px;
+}
+
+.textAlign{
+	text-align: justify;
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.img-fl-left{
+	float: left;
+	width: 8%;
+}
+.p-fl-left{
+	margin: 6px;
+	float: left;
+	width: 82%;
+}
+
+
+.p-fl-left-2{
+	margin: 6px;
+	float: left;
+	width: 37%;
+}
+
+.description{
+	margin: 0;
+	padding-left:25px;
+}
+
+.description2{
+	margin: 5px;
+	padding-left:80px;
+}
+#center{
+	text-align: center;
+}

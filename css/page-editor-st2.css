@@ -1,0 +1,263 @@
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Montserrat", sans-serif;
+}
+
+.role1 {
+	font-size: 16px;
+}
+
+body {
+	background: #585c68;
+	font-size: 12px;
+	line-height: 30px;
+	color: #555555;
+}
+
+.bold {
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.semi-bold {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.cvsumu {
+	width: 800px;
+	height: auto;
+	display: flex;
+	margin: 50px auto;
+}
+
+.rolename {
+	font-size: 15px;
+	color: white;
+}
+
+.cvsumu .cvsumu_left {
+	width: 280px;
+	background: #0bb5f4;
+}
+
+.cvsumu .cvsumu_left .cvsumu_profile {
+	width: 100%;
+	height: 280px;
+}
+
+.cvsumu .cvsumu_left .cvsumu_profile img {
+	width: 100%;
+	height: 100%;
+}
+
+.cvsumu .cvsumu_left .cvsumu_content {
+	padding: 0 25px;
+}
+
+.cvsumu .title {
+	margin-bottom: 20px;
+}
+
+.cvsumu .cvsumu_left .bold {
+	color: #fff;
+}
+
+.cvsumu .cvsumu_left .regular {
+	color: #b1eaff;
+}
+
+.cvsumu .cvsumu_item {
+	padding: 25px 0;
+	border-bottom: 2px solid #b1eaff;
+}
+
+.cvsumu .cvsumu_left .cvsumu_item:last-child,
+.cvsumu .cvsumu_right .cvsumu_item:last-child {
+	border-bottom: 0px;
+}
+
+.cvsumu .cvsumu_left ul li {
+	display: flex;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+.cvsumu .cvsumu_left ul li:last-child {
+	margin-bottom: 0;
+}
+
+.cvsumu .cvsumu_left ul li .icon {
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	color: #0bb5f4;
+	border-radius: 50%;
+	margin-right: 15px;
+	font-size: 16px;
+	position: relative;
+}
+
+.cvsumu .icon i,
+.cvsumu .cvsumu_right .cvsumu_hobby ul li i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cvsumu .cvsumu_left ul li .detail1 {
+	color: #b1eaff;
+}
+
+.img-fl-left {
+	float: left;
+	width: 8%;
+}
+
+.cvsumu .cvsumu_left .cvsumu_skills ul li {
+	display: flex;
+	margin-bottom: 10px;
+	color: #b1eaff;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cvsumu .cvsumu_left .cvsumu_skills ul li .skills_name {
+	width: 25%;
+}
+
+.cvsumu .cvsumu_left .cvsumu_skills ul li .skill_progress {
+	width: 60%;
+	margin: 0 5px;
+	height: 5px;
+	background: #009fd9;
+	position: relative;
+}
+
+.cvsumu .cvsumu_left .cvsumu_skills ul li .skill_per {
+	width: 15%;
+}
+
+.cvsumu .cvsumu_left .cvsumu_skills ul li .skill_progress span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #fff;
+}
+
+.cvsumu .cvsumu_left .cvsumu_social .semi-bold {
+	color: #fff;
+	margin-bottom: 3px;
+}
+
+.cvsumu .cvsumu_right {
+	width: 520px;
+	background: #fff;
+	padding: 25px;
+}
+
+.cvsumu .cvsumu_right .bold {
+	color: #0bb5f4;
+}
+
+.cvsumu .cvsumu_right .cvsumu_edu ul,
+.cvsumu .cvsumu_right .cvsumu_education ul {
+	padding-left: 40px;
+	overflow: hidden;
+}
+
+.cvsumu .cvsumu_right ul li {
+	position: relative;
+}
+
+.cvsumu .cvsumu_right ul li .date {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.cvsumu .cvsumu_right ul li .info {
+	margin-bottom: 20px;
+}
+
+.cvsumu .cvsumu_right ul li:last-child .info {
+	margin-bottom: 0;
+}
+
+.cvsumu .cvsumu_right .cvsumu_edu ul li:before,
+.cvsumu .cvsumu_right .cvsumu_education ul li:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -25px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 2px solid #0bb5f4;
+	line-height: 35px;
+}
+
+.cvsumu .cvsumu_right .cvsumu_edu ul li:after {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: -21px;
+	width: 2px;
+	height: 115px;
+	background: #0bb5f4;
+}
+
+.cvsumu .cvsumu_right .cvsumu_education ul li:after {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: -21px;
+	width: 2px;
+	height: 200px;
+	background: #0bb5f4;
+}
+
+.cvsumu .cvsumu_right .cvsumu_hobby ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cvsumu .cvsumu_right .cvsumu_hobby ul li {
+	width: 80px;
+	height: 80px;
+	border: 2px solid #0bb5f4;
+	border-radius: 50%;
+	position: relative;
+	color: #0bb5f4;
+}
+
+.cvsumu .cvsumu_right .cvsumu_hobby ul li i {
+	font-size: 30px;
+}
+
+.cvsumu .cvsumu_right .cvsumu_hobby ul li:before {
+	content: "";
+	position: absolute;
+	top: 40px;
+	right: -52px;
+	width: 50px;
+	height: 2px;
+	background: #0bb5f4;
+}
+
+.cvsumu .cvsumu_right .cvsumu_hobby ul li:last-child:before {
+	display: none;
+}
+
+.iii {
+	padding: 5px;
+	margin: 5px;
+	width: 20%;
+	float: left;
+

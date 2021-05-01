@@ -1,0 +1,103 @@
+/*styling for two divs*/
+.show{
+	margin:0;
+}
+.description{
+	font-size: 16x;
+	background-color: rgb(241, 237, 229,0.7);
+	margin:20px;
+	margin-top: 20px;
+	border-style: solid;
+	border-radius:20px;
+	color:black;
+	padding: 8px 20px 8px 10px;
+}
+h1{
+	color: #003;
+}   
+/*styling for trivia details */
+.trivia{
+	color: #003;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+
+/*styling effect for the quotes */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+:root{
+	--bg-color: rgb(241, 237, 229,0.7);
+}
+
+body {
+width: 100vw;
+height: 100vh;
+color: #000;
+background-color: var(--bg-color);
+}
+
+
+/* title styles */
+.home-title span{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	line-height: 1.2;
+}
+
+.home-title span::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #003;
+	animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+	transform: translateX(-101%);
+	color: #003;
+}
+.q{
+	color:#003;
+}
+.n{
+	color: #003;
+}
+
+.home-title span::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--bg-color);
+	animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+	transform: translateX(0);
+	color:rgb(241, 237, 229,0.7);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+	animation-delay: 2s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+	animation-delay: 2.5s;
+}
+
+@keyframes a-ltr-after{
+	0% {transform: translateX(-100%)}
+	100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+	0% {transform: translateX(0)}
+	100% {transform: translateX(200%)}
+}   

@@ -1,0 +1,50 @@
+hr {
+	border: 2px solid #003cb3;
+}
+.footer hr{
+	border: 2px solid white;
+}
+h1 {
+	color: #003cb3;
+	font-family: 'Mulish', sans-serif;
+}
+
+.Heading {
+	font-family: 'Mulish', sans-serif;
+	font-size: 40px;
+	text-align: left;
+}
+
+.Heading-2 {
+	font-family: 'Mulish', sans-serif;
+	font-size: 40px;
+	margin-left: 20px;
+}
+
+.Main-text {
+	text-align: justify;
+	margin: 10px;
+	font-family: 'Mulish', sans-serif;
+	font-size: 25px;
+	color: black;
+}
+
+.Main-text-2 {
+	text-align: justify;
+	margin: 15px;
+	font-family: 'Mulish', sans-serif;
+	font-size: 25px;
+	color: black;
+}
+
+.grid11 {
+	display: grid;
+	margin: 0 auto;
+	padding: 1% 8%;
+	grid-template-columns: auto auto auto auto;
+}
+
+.grid1-item {
+	padding: 10px;
+}
+
