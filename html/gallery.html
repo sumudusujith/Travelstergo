@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="../css/pagelayout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css" />
+    <!-- js links -->
+    <script type="text/javascript" src="../js/gallery.js"></script>
+    <!-- title -->
+    <title>
+      GALLERY | Travelstergo
+    </title>
+    <!-- title image -->
+    <link rel="icon" href="../images/logo2.png" type="image/icon type" alt="" />
+  </head>
+  <body>
+    <div role="navigation" aria-label="Main">
+      <!-- navigation div -->
+      <ul class="main-navigation-ul">
+        <li>
+          <a class="main-navigation-logo" href="homepage.html"
+            ><img src="../images/logo2.png" alt="logo"  height="45"
+            /></a><!-- navigation image -->
+        </li>
+        <li><a class="main-navigation-li" href="homepage.html">HOME</a></li>
+        <li><a class="main-navigation-li" href="destinations.html">DESTINATIONS</a></li>
+        <li><a class="main-navigation-li" href="products.html">PRODUCTS</a></li>
+        <li><a class="active main-navigation-li" href="gallery.html">GALLERY</a></li>
+        <li><a class="main-navigation-li" href="quiz.html">QUIZ</a></li>
+        <li><a class="main-navigation-li" href="about.html">ABOUT</a></li>
+        <li><a class="main-navigation-li" href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <img src="../images/gallery.png" alt="gallery-heading"  width="100%" 
+      role="img" aria-label="Gallery heading" /><!-- heading image -->
+    <div class="container" role="main">
+      <!-- main container -->
+      <br><br>
+      <div class="gallery">
+        <!-- gallery items -->
+        <div class="gallery-item" onclick="getImage(1)">
+          <!-- gallery item1 -->
+          <div >
+            <img class="gallery-image" src="../images/gallery1.png" alt="galle fort "  width="100%" 
+              role="img" aria-label="picture of galle fort from sky"  />
+          </div>
+          <div class="gallery-image-description">
+            <h3>Galle Fort
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(2)">
+          <!-- gallery item2 -->
+          <div>
+            <img class="gallery-image" src="../images/gallery2.png" alt="sigiriya"  width="100%" 
+              role="img" aria-label="picture of sigiriya from sky in wide angle"/>
+          </div>
+          <div class="gallery-image-description">
+            <h3>Sigiriya
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(3)">
+          <!-- gallery item3 -->
+          <div>
+            <img class="gallery-image" src="../images/gallery3.png" alt="nine arch bridge"  width="100%" 
+              role="img" aria-label="picture of nine arch bridge while a train is moving"/>
+          </div>
+          <div class="gallery-image-description">
+            <h3>9 Arch Bridge
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(4)">
+          <!-- gallery item4 -->
+          <div>
+            <img class="gallery-image" src="../images/gallery4.png" alt="temple of tooth"  width="100%" 
+              role="img" aria-label="picture of temple of tooth with an elephant in the festive season"/>
+          </div>
+          <div class="gallery-image-description">
+            <h3>Temple of Tooth
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(5)">
+          <!-- gallery item5 -->
+          <div>
+            <img class="gallery-image" src="../images/gallery5.png" alt="dunhinda falls"  width="100%" 
+              role="img" aria-label="picture of dunhinda falls captured from the sky." />
+          </div>
+          <div class="gallery-image-description" role="article">
+            <h3>Dunhinda Falls
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <!-- ----------------form to select destination, change page colour, change font colour------------- -->
+        <form role="img" >
+          <label>Destination: </label><!-- pull down menu for destinations -->
+          <select id="destinations" onchange="CheckDestination(this.form)" class="align" 
+            aria-label="dropdown menu to select destination">
+            <option value="pleaseSelect" disabled selected hidden>Select Destination</option>
+            <option value="option1">Galle Fort</option>
+            <option value="option2">Sigiriya</option>
+            <option value="option3">9 Arch Bridge</option>
+            <option value="option4">Temple of Tooth</option>
+            <option value="option5">Dunhinda Falls</option>
+          </select>
+          <label">Background Colour: </label><!-- radio buttons to select background colours -->
+          <input  type="radio" name="colour" value="color1" id="bgColour" onClick="bgcolor(this)"/>
+          <label for="color1" aria-label="radio button to change colour">#74E89B</label>
+          <input  type="radio" name="colour" value="color2" id="bgColour" onClick="bgcolor(this)"/>
+          <label for="color2" aria-label="radio button to change colour">#39BBDB</label>
+          <input  type="radio" name="colour" value="color3" id="bgColour" onClick="bgcolor(this)"/>
+          <label class="align" for="color3" aria-label="radio button to change colour">#EDE379</label>
+          <label >Font Colour: </label><!-- pulldown menu to select font colour -->
+          <select class="align" id="fontColor" onchange="fontcolor(this.form)" 
+            aria-label="dropdown menu to select font colour">
+            <option value="pleaseSelect" disabled selected hidden>Select Font Colour</option>
+            <option value="color1">#AB5454</option>
+            <option value="color2">#3865E0</option>
+            <option value="color3">#77188C</option>
+            <option value="color4">#8C1861</option>
+            <option value="color5">#18758C</option>
+          </select>
+          <input type="reset" value="Reset" onclick="reset1()" role="button" /><!-- reset colour changes and hide big image -->
+        </form>
+      </div>
+      <br>
+      <div id="gallery-display">
+        <!-- big image and description display area -->
+        <div id="bigImage-div">
+          <img id="big-image"  alt="big-image" src=""   width="85%" 
+            role="img" aria-label="bigger image of the selected image" /><!-- big image will display here -->
+        </div>
+        <div id="bigImage-description-div">
+          <p id="bigImage-description"></p>
+          <!-- image description will be here -->
+        </div>
+      </div>
+    </div>
+    <br>
+	
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <!-- website logo in footer -->
+          <a href="homepage.html">
+          <img
+            src="../images/logo.png"
+            alt="footer logo"
+            width="85%"
+            role="img" aria-label="link to home page"
+            /></a>
+        </div>
+        <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+          <h2>Navigation</h2>
+          <!-- footer navigation -->
+          <ul class="no-bullet">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li> <a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2>About Us</h2>
+          <p class="justify-text">
+            We created this website for our course work in web module.
+            <br />
+            This site contains information about tourist attractions in Sri Lanka,
+            with detailed descriptions and images which will help you to plan your
+            vacation.
+            <br />
+            Also we have some unique, export quality products made in Sri Lanka
+            for the lowest rates.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 1234567 <br /><br />
+            Travelstergo <br />
+            No 18, <br />
+            Rodney Place,<br />
+            Colombo.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="social-row">
+          <!-- footer social media links with images -->
+          <a href="">
+          <img
+            src="../images/instagram.png"
+            alt="instagram"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="instagram link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/fb.png"
+            alt="facebook"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="facebook link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/twitter.png"
+            alt="twitter"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="twitter link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/mail.png"
+            alt="email"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="email link of the website"
+            />
+          </a>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <!-- page credits-link to page editor page -->
+      <p class="page-credits">Created by <a href="page-editor-st4.html" target=\"_blank\">Hirun Kodituwakku</a></p>
+    </div>
+  </body>
+</html>

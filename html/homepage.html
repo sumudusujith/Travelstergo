@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- fonts-->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,500&display=swap" rel="stylesheet"
+         />
+		 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+      <!--css links-->
+      <link rel="stylesheet" type="text/css" href="../css/pagelayout.css" />
+      <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
+      <title>
+         HOME | Travelstergo
+      </title>
+      <link rel="icon" href="../images/logo2.png" type="image/icon type" />
+   </head>
+   <body>
+       <div role="navigation" aria-label="Main">
+      <!-- navigation div -->
+      <ul class="main-navigation-ul" >
+        <li>
+          <a class="main-navigation-logo" href="homepage.html"
+            ><img src="../images/logo2.png" alt="logo"  height="45"
+            /></a><!-- navigation image -->
+        </li>
+        <li><a class="active main-navigation-li" style="background-color: #195393" href="homepage.html">HOME</a></li>
+        <li><a class="main-navigation-li" href="destinations.html">DESTINATIONS</a></li>
+        <li><a class="main-navigation-li" href="products.html">PRODUCTS</a></li>
+        <li><a class="main-navigation-li" href="gallery.html">GALLERY</a></li>
+        <li><a class="main-navigation-li" href="quiz.html">QUIZ</a></li>
+        <li><a class="main-navigation-li" href="about.html">ABOUT</a></li>
+        <li><a class="main-navigation-li" href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="../images/j2.jpg" style="width:100%">
+            <div class="text">Travelstergo</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/j4.jpg" style="width:100%">
+            <div class="text">Travelstergo</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="../images/j3.jpg" style="width:100%">
+            <div class="text">Travelstergo</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="../images/j2.jpg" style="width:100%">
+            <div class="text">Travelstergo</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">5 / 1</div>
+            <img src="../images/j5.jpg" style="width:100%">
+            <div class="text">Travelstergo</div>
+         </div>
+      </div>
+      
+      <div style="text-align:center; background-color: black; padding:8px;">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+      </div>
+      <script>
+         var slideIndex = 0;
+         showSlides();
+         
+         function showSlides() {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+           }
+           slideIndex++;
+           if (slideIndex > slides.length) {slideIndex = 1}    
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+           setTimeout(showSlides, 2000); // Change image every 2 seconds
+         }
+      </script>
+      
+	  
+	  
+      <div class="container" style="text-align: center;">
+	  <br><br>
+         <video width="70%" controls>
+            <source src="../images/srilankavi.mp4" type="video/mp4">
+            <source src="../images/srilankavi.ogg" type="video/ogg">
+         </video>
+      </div>
+      <div style="padding: 10px;">
+         <input class="button" type="Covid-19 News" onclick="window.location.href='https://www.hpb.health.gov.lk/en';" value="Covid-19 Alerts" />
+      </div>
+      <div style="padding: 10px;">
+         <input class="button2" type="travel News" onclick="window.location.href='https://www.sltda.gov.lk/';" value="Travel guide Sri Lanka" />
+		
+	  </div>
+      <div class="container">
+         <h1>Where to go in Sri Lanka</h1>
+         <p style="text-align: justify;">
+            Sri Lanka has it all. Watch whales off palm-fringed beaches, track leopards in lush rainforests and hike through the hill country to verdant tea plantations. You can get an insight into the island’s culture by exploring Buddhist monuments, clambering over colonial forts and indulging in its intensely flavoured cuisine. With such a wealth of attractions, figuring out where to go in Sri Lanka can be quite a task, although its relatively small size means you can fit a lot into a single trip.
+            We’ve covered the length and breadth of the island to uncover the best places to go in Sri Lanka – from the popular to those off the beaten track.
+         </p>
+         <br>
+		 <hr>
+         <h1>Geography</h1>
+         <p style="text-align: justify;">
+            Sri Lanka, formerly Ceylon, island country lying in the Indian Ocean and separated from peninsular India by the Palk Strait. It is located between latitudes 5°55′ and 9°51′ N and longitudes 79°41′ and 81°53′ E and has a maximum length of 268 miles (432 km) and a maximum width of 139 miles (224 km).
+         </p>
+         <br>
+		 <hr>
+         <h1>Things to Do</h1>
+         <p style="text-align: justify;">
+            What’s on the dish, as a holiday destination Sri Lanka has so much to offer, whether it’s a tropical sandy beach vacation, wildlife safari tour, a tour of mystical ancient ruin dominated north central plains, an alluring adventure tour, or wedding and Honeymoon tour to an enchanting hotel in Sri Lanka, and is one of the best destinations where one can do all this with a very short tour, a Smörgåsbord of tropical delights in the way of lobster, lagoon crab, and prawn to name a few, all cooked in the fiery Sri Lankan style.<br><br>
+            With miles of wide sandy beaches Sri Lanka, it is more than little tough to select where you want to go as many beaches will vie for your attention, is an ideal getaway destination those searching for sun and fun. The South west coast of Sri Lanka, though little crowded, is famous for its beaches, coral reefs in close proximity to the shores and ideal for snorkelling, diving among a long lost wreck now a paradise to a multitude of sea life. And if you are seeking a remote and secluded beach, the ones in the Deep South and East of Sri Lanka are the best. Sri Lanka is one on the best places to see the Big 04, elusive Sri Lankan leopard, elephant, bear & whale, whether in “Willpattu” National park, a habitat similar to the everglades in the north or “Yala” National Park, in the south or one of the many other national parks that lie in between. <br><br>Catch a camp safari tour or a jeep safari tour to witness the elephant and Sri Lankan Leopard, or the black bear. Take a boat tour to see the spinner dolphins or a Blue whale pod in Mirissa in the South, Kalpitiya in the North West or Trincomalee in the East coast. Take an alluring cultural tour along the cultural triangle, be awed by what had been achieved nearly two millennia ago by this small island nation, tour around ancient mystical ruins standing stupendous and silent, as they had for two millennia through foreign invasion and jungle growth, to await the day that they once again would revile the magnificence to the world as they do today, walk along the immense earthen bunds across many miles forming reservoirs so large that they make even the modern engineer wonder how all of it was achieved.<br><br>
+            Take an adventure tour, kite surfing available at most beach locations in the south west coast or carry your own kite surfing gear, great weather throughout November to April in the western seaboard makes it an ideal stretch for kite surfing from Mt. Lavinia in Colombo to Hambantota in the deep south.<br><br> An excursion that has caught on fast with locals and tourist alike is hot air ballooning, nothing beats a hot air balloon excursion across the central plains. Hot air ballooning tours available from the north central plains of the island and be carried away under blue skies and over the landscape dotted with many little man-made lakes and ancient monuments, exchange vows and get married in the air, in a hot air balloon! Take trekking tour through the tropical jungle filled with fauna and flora endemic to Sri Lanka, take enchanting a walk to a misty water fall, tour Sri Lanka as a wedding or honeymoon getaway, take a tour on a nostalgic steam train, itself a reminder of an era gone by, past scenic landscapes and mosaics of lush green paddy fields, snorkel on a tropical shallow coral reef or take a boat tour and dive looking for old ship wrecks, one of the most famous being the WW II British aircraft carrier HMS Hermes, meet the aboriginal people of Sri Lanka the “Veddhas” and learn their ways of life which hasn’t changed for a millennia, only very few countries in the world can offer this sort of an assortment in such a small land.
+         </p>
+         
+      </div>
+		<div class="grid11">
+         <div class="grid1-item">
+            <img   src="../images/cc1.png" width="100%">
+         </div>
+         <div class="grid1-item">
+            <img   src="../images/cc2.png" width="100%"> 
+         </div>
+         <div class="grid1-item">
+            <img   src="../images/cc3.png" width="100%"> 
+         </div>
+         <div class="grid1-item">
+            <img   src="../images/cc4.png" width="100%"> 
+         </div>
+      </div>
+	    <a href="#top" 
+		style="float: right; margin-right: 19px; font-size: 17px; padding: 10px; border-radius: 50px;
+		background-color: #fcc90e; color: black; border: 2px solid black;">Back to top</a>
+		<br><br><br><br>
+      <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <!-- website logo in footer -->
+          <a href="homepage.html">
+          <img
+            src="../images/logo.png"
+            alt="footer logo"
+            width="85%"
+            role="img" aria-label="link to home page"
+            /></a>
+        </div>
+        <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+          <h2>Navigation</h2>
+          <!-- footer navigation -->
+          <ul class="no-bullet">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li> <a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2>About Us</h2>
+          <p class="justify-text">
+            We created this website for our course work in web module.
+            <br />
+            This site contains information about tourist attractions in Sri Lanka,
+            with detailed descriptions and images which will help you to plan your
+            vacation.
+            <br />
+            Also we have some unique, export quality products made in Sri Lanka
+            for the lowest rates.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 1234567 <br /><br />
+            Travelstergo <br />
+            No 18, <br />
+            Rodney Place,<br />
+            Colombo.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="social-row">
+          <!-- footer social media links with images -->
+          <a href="">
+          <img
+            src="../images/instagram.png"
+            alt="instagram"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="instagram link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/fb.png"
+            alt="facebook"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="facebook link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/twitter.png"
+            alt="twitter"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="twitter link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/mail.png"
+            alt="email"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="email link of the website"
+            />
+          </a>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <!-- page credits-link to page editor page -->
+      <p class="page-credits">Created by <a href="page-editor-st2.html" target=\"_blank\">Sumudu Herath</a></p>
+    </div>
+   </body>
+</html>
+

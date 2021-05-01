@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+      />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap"
+      rel="stylesheet"
+      />
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="../css/pagelayout.css" />
+    <!-- javascript to change colour when hovering-->
+    <script>
+      function mouseOver(x){
+      	var rects=document.getElementsByTagName("rect");
+      	rects[x].style.fill="#3799df";
+      }
+      
+      function mouseOut(x){
+      	var rects=document.getElementsByTagName("rect");
+      	rects[x].style.fill="#fec711";
+      }
+    </script>
+	<!-- css for svg -->
+    <style>
+      rect{
+      fill: #fec711;
+      }
+      text{
+      fill: black;
+      }
+    </style>
+	<!-- title -->
+    <title>
+      SITEMAP | Travelstergo
+    </title><!-- title logo -->
+    <link rel="icon" href="../images/logo2.png" type="image/icon type" />
+  </head>
+  <body>
+    <div role="navigation" aria-label="Main">
+      <!-- navigation div -->
+      <ul class="main-navigation-ul">
+        <li>
+          <a class="main-navigation-logo" href="homepage.html"
+            ><img src="../images/logo2.png" alt="logo"  height="45"
+            /></a><!-- navigation image -->
+        </li>
+        <li><a class="main-navigation-li" href="homepage.html">HOME</a></li>
+        <li><a class="main-navigation-li" href="destinations.html">DESTINATIONS</a></li>
+        <li><a class="main-navigation-li" href="products.html">PRODUCTS</a></li>
+        <li><a class="main-navigation-li" href="gallery.html">GALLERY</a></li>
+        <li><a class="main-navigation-li" href="quiz.html">QUIZ</a></li>
+        <li><a class="main-navigation-li" href="about.html">ABOUT</a></li>
+        <li><a class="main-navigation-li" href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <br><br><br><br>
+      <svg width="1200" height="600" role="img" aria-label="sitemap svg">
+        <a href="homePage.html">
+          <image x="540" y="0" href="../images/logo2.png" width="200" height="150" 
+            role="img" aria-label="link to home page"/>
+        </a>
+        <g id="row-1">
+          <g id="home">
+            <a href="homePage.html">
+              <rect x="120"  
+                y="250" width="100" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(0)" onmouseout="mouseOut(0)"/>
+              <text x="145" y="275" onmouseover="mouseOver(0)" onmouseout="mouseOut(0)" >HOME	</text>
+            </a>
+          </g>
+          <g id="destinations">
+            <a href="destinations.html">
+              <rect x="250" 
+                y="250" width="160" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(1)" onmouseout="mouseOut(1)"/>
+              <text x="272" y="275"  onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" >DESTINATIONS	</text>
+            </a>
+          </g>
+          <g id="products">
+            <a href="products.html">
+              <rect x="440" 
+                y="250" width="120" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(2)" onmouseout="mouseOut(2)"/>
+              <text x="460" y="275"  onmouseover="mouseOver(2)" onmouseout="mouseOut(2)" >PRODUCTS	</text>
+            </a>
+          </g>
+          <g id="gallery">
+            <a href="gallery.html">
+              <rect x="590" 
+                y="250" width="120" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(3)" onmouseout="mouseOut(3)"/>
+              <text x="613" y="275"  onmouseover="mouseOver(3)" onmouseout="mouseOut(3)" >GALLERY </text>
+            </a>
+          </g>
+          <g id="quiz">
+            <a href="quiz.html">
+              <rect x="740" 
+                y="250" width="120" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(4)" onmouseout="mouseOut(4)"/>
+              <text x="780" y="275"  onmouseover="mouseOver(4)" onmouseout="mouseOut(4)" >QUIZ	</text>
+            </a>
+          </g>
+          <g id="about">
+            <a href="about.html">
+              <rect x="890" 
+                y="250" width="120" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(5)" onmouseout="mouseOut(5)"/>
+              <text x="922" y="275"  onmouseover="mouseOver(5)" onmouseout="mouseOut(5)" >ABOUT </text>
+            </a>
+          </g>
+          <g id="contact">
+            <a href="contact.html">
+              <rect x="1040" 
+                y="250" width="120" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(6)" onmouseout="mouseOut(6)"/>
+              <text x="1051" y="275"  onmouseover="mouseOver(6)" onmouseout="mouseOut(6)" >CONTACT US </text>
+            </a>
+          </g>
+        </g>
+        <g>
+          <g id="destination1">
+            <a href="destination1.html">
+              <rect x="300" 
+                y="320" width="100" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(7)" onmouseout="mouseOut(7)"/>
+              <text  x="322" y="345"  onmouseover="mouseOver(7)" onmouseout="mouseOut(7)" >GALLE </text>
+            </a>
+          </g>
+          <g id="destination2">
+            <a href="destination2.html">
+              <rect x="300" 
+                y="380" width="100" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(8)" onmouseout="mouseOut(8)"/>
+              <text  x="322" y="405"  onmouseover="mouseOver(8)" onmouseout="mouseOut(8)" >KANDY </text>
+            </a>
+          </g>
+          <g id="destination3">
+            <a href="destination3.html">
+              <rect  x="300" 
+                y="440" width="100" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(9)" onmouseout="mouseOut(9)"/>
+              <text  x="311" y="465"  onmouseover="mouseOver(9)" onmouseout="mouseOut(9)" >COLOMBO</text>
+            </a>
+          </g>
+          <g id="destination4">
+            <a href="destination4.html">
+              <rect  x="300" 
+                y="500" width="150" height="40" rx="20" ry="20" 
+                onmouseover="mouseOver(10)" onmouseout="mouseOut(10)"/>
+              <text  x="307" y="525"  onmouseover="mouseOver(10)" onmouseout="mouseOut(10)" >ANURADHAPURA	</text>
+            </a>
+          </g>
+        </g>
+        <path d="M170 250  L170 205 Q170 200 175 200 L1095 200 Q1100 200 1100 205 L1100 250 
+          M330 200 L330 250 
+          M500 200 L500 250 
+          M650 200 L650 250 
+          M800 200 L800 250 
+          M950 200 L950 250 
+          M650 200 L650 150
+          " stroke="Black" stroke-width="3" fill="none"/>
+        <path d="M280 290 L280 515 Q280 520 285 520 L300 520 
+          M280 460 L300 460 
+          M280 400 L300 400 
+          M280 340 L300 340 
+          " stroke="Black" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <!-- website logo in footer -->
+          <a href="homepage.html">
+          <img
+            src="../images/logo.png"
+            alt="footer logo"
+            width="85%"
+            role="img" aria-label="link to home page"
+            /></a>
+        </div>
+        <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+          <h2>Navigation</h2>
+          <!-- footer navigation -->
+          <ul class="no-bullet">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li> <a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2>About Us</h2>
+          <p class="justify-text">
+            We created this website for our course work in web module.
+            <br />
+            This site contains information about tourist attractions in Sri Lanka,
+            with detailed descriptions and images which will help you to plan your
+            vacation.
+            <br />
+            Also we have some unique, export quality products made in Sri Lanka
+            for the lowest rates.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 1234567 <br /><br />
+            Travelstergo <br />
+            No 18, <br />
+            Rodney Place,<br />
+            Colombo.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="social-row">
+          <!-- footer social media links with images -->
+          <a href="">
+          <img
+            src="../images/instagram.png"
+            alt="instagram"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="instagram link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/fb.png"
+            alt="facebook"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="facebook link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/twitter.png"
+            alt="twitter"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="twitter link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/mail.png"
+            alt="email"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="email link of the website"
+            />
+          </a>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <!-- page credits-link to page editor page -->
+      <p class="page-credits">Created by <a href="page-editor-st4.html" target=\"_blank\">Hirun Kodituwakku</a></p>
+    </div>
+  </body>
+</html>

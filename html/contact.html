@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet"  />
+	links-->
+    <link rel="stylesheet" type="text/css" href="../css/pagelayout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Review.css" />
+	
+	<!-- js links -->
+	<script type="text/javascript" src="../js/gallery.js"></script>
+	
+
+	
+	
+    <title>
+      CONTACT | Travelstergo
+    </title>
+    <link rel="icon" href="../images/logo2.png" type="image/icon type" />
+  </head>
+
+  <body>
+    <div role="navigation bar">
+      <ul class="main-navigation-ul">
+        <li>
+          <a class="main-navigation-logo" href="homepage.html"
+            ><img src="../images/logo2.png" alt="logo"  height="45"
+          /></a>
+        </li>
+         <li><a class="main-navigation-li" href="homepage.html">HOME</a></li>
+        <li><a class="main-navigation-li" href="destinations.html">DESTINATIONS</a></li>
+        <li><a class="main-navigation-li" href="products.html">PRODUCTS</a></li>
+        <li><a class="main-navigation-li" href="gallery.html">GALLERY</a></li>
+        <li><a class="main-navigation-li" href="quiz.html">QUIZ</a></li>
+        <li><a class="main-navigation-li" href="about.html">ABOUT</a></li>
+        <li><a class="active main-navigation-li" href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+   
+	<br><br><br>
+
+	
+    <div class="container" role="main">
+	
+	<div class="review">                                <!--Comment form starts here-->
+        <fieldset class="legend">
+            <legend align="center">
+                <h1 class="style"><b>REVIEW</b></h1>                                                                                     <!--comment form heading-->
+            </legend>
+            <form class="form" name="myForm1" action="Main.html" method="post" id="information" onsubmit="check()">
+                <table cellspacing="10" class="table">
+                    <tr>
+                        <td class="text"><b>First Name:</b></td>
+                        <td><input class="text-Fname" type="text" name="Firstname" placeholder="First Name" id="Firstname"></td>                    <!--first name section-->
+                    </tr>
+                    <tr>
+                        <td class="text" ><b>Last Name :</b></td>
+                        <td><input class="text-Fname" type="text" name="Lastname" Placeholder="Last Name" id="Lastname"></td>                       <!--last name section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Age       :</b></td>
+                        <td><input class="text-Fname" type="text" name="Age" Placeholder="Age"></td>                                                <!--age section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Gender    :</b></td>
+                        <td><input type="radio" name="Gender" value="Male"><b class="text">Male</b> <input type="radio" name="Gender" value="Female">   <!--gender section--->
+                            <b class="text">Female</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Email Address :</b></td>
+                        <td><input class="text-Fname" type="text" name="EmailAddress" Placeholder="Email Address"></td>                             <!--email address section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Comments:</b></td>
+                        <td><textarea class="text-Fname" name="textarea" cols="30" rows="10" id="comments"></textarea></td>                         <!--comment area section-->
+                    </tr>
+                    <tr>
+                        <td class="text"><b>Rating: </b></td>                                                                                       <!--rating section-->
+                        <td>
+                            <select id="rate">
+                                <option value="Please Select">- -</option>                                                                          <!--drop down menu for ration option-->
+                                <option value="Excellent">Excellent</option>
+                                <option value="Above Average">Above average</option>
+                                <option value="Average">Average</option>
+                                <option value="Below Average">Below Average</option>
+                                <option value="Poor">Poor</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td></td>
+                        <td class="button-1"><button class="button-1"  type="submit" value="Submit" onclick="return validateForm()" >Submit</button></td>       <!---submit button-->
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <script>
+            function validateForm() {
+                var f = document.forms["myForm1"]["Firstname"].value;       /*assigning value from the first name to a variable*/
+                var l = document.forms["myForm1"]["Lastname"].value;        /*assigning value from the second name to a variable*/
+                var c = document.forms["myForm1"]["textarea"].value;        /*assigning value from the comment area to a variable*/
+                if (f == "") {                                              /*Checking whether the user has filled the first name*/
+                    alert("First name must be filled out");                 /*if not will show the required message*/
+                    return false;
+                }
+                if (l == "") {                                              /*Checking whether the user has filled the first name*/
+                    alert("Last name must be filled out");                 /*if not will show the required message*/
+                    return false;
+                }
+                if (c == "") {                                             /*Checking whether the user has filled the first name*/
+                    alert("Write a comment about our website");            /*if not will show the required message*/
+                    return false;
+                }
+            }
+
+
+            function check() {                                             /*Function to check whether the required fields are filled*/
+                var Firstname =document.getElementById("Firstname").value;
+                var Lastname =document.getElementById("Lastname").value;
+                var rate =document.getElementById("rate").value;
+                var comments =document.getElementById("comments").value;
+                var details=confirm("Dear "+Firstname+" "+Lastname+","+"Thank you very much for your feedback.You have rated our site as "+rate+" "+"and your comment was "+comments);
+                if (details==true) {
+                    document.getElementById("information").reset();
+                    window.open("file:///C:/desktop/web%20coursework/Web%20CW/student%202");
+                }
+                else {
+                    none;
+                }
+
+            }
+
+
+        </script>
+    </div>
+
+		
+
+
+    </div>
+
+<br><br>
+<!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <!-- website logo in footer -->
+          <a href="homepage.html">
+          <img
+            src="../images/logo.png"
+            alt="footer logo"
+            width="85%"
+            role="img" aria-label="link to home page"
+            /></a>
+        </div>
+        <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+          <h2>Navigation</h2>
+          <!-- footer navigation -->
+          <ul class="no-bullet">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li> <a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2>About Us</h2>
+          <p class="justify-text">
+            We created this website for our course work in web module.
+            <br />
+            This site contains information about tourist attractions in Sri Lanka,
+            with detailed descriptions and images which will help you to plan your
+            vacation.
+            <br />
+            Also we have some unique, export quality products made in Sri Lanka
+            for the lowest rates.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 1234567 <br /><br />
+            Travelstergo <br />
+            Street name 1,<br />
+            Street name 2,<br />
+            Colombo.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="social-row">
+          <!-- footer social media links with images -->
+          <a href="">
+          <img
+            src="../images/instagram.png"
+            alt="instagram"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="instagram link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/fb.png"
+            alt="facebook"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="facebook link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/twitter.png"
+            alt="twitter"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="twitter link of the website"
+            />
+          </a>
+          <a href="">
+          <img
+            src="../images/mail.png"
+            alt="email"
+            class="footer-icon"
+            height="45"
+            role="img" aria-label="email link of the website"
+            />
+          </a>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <!-- page credits-link to page editor page -->
+      <p class="page-credits">Created by <a href="page-editor-st2.html" target=\"_blank\">Sumudu Herath</a></p>
+    </div>
+  </body>
+</html>
